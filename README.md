@@ -1,2 +1,2 @@
-# trying to MERP
+# trying to MERN
  
