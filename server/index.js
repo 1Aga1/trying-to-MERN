@@ -1,18 +1,24 @@
-const { MongoClient } = require('mongodb');
+const express = require('express');
+const bodyParser = require('body-parser');
+const cors = require('cors');
 
-const url = "mongodb://localhost:27017";
+const ConnectDB = require('./db');
+const ActionsDB = require('./db');
 
-const client = new MongoClient(url);
+const app = express();
+const PORT = 3000;
 
-async function main() {
-    try {
-        await client.connect();
-        console.log('Connection established')
-    } catch (e) {
-        console.error(e)
-    } finally {
-        await client.close();
+app.use(bodyParser.urlencoded({extended: true}));
+app.use(cors());
+app.use(bodyParser.json());
+
+ConnectDB();
+
+app.get('/', (req, res) => {
+    const docs = JSON.stringify(ActionsDB('users', 'users', 'find', {}));
+    for (let doc in docs) {
+        res.send(doc);
     }
-}
+});
 
-main();
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
