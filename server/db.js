@@ -1,30 +1,13 @@
-const { MongoClient } = require('mongodb');
+const mongoose = require('mongoose')
 const url = "mongodb://localhost:27017";
 
-const client = new MongoClient(url);
+mongoose
+    .connect(url, { useNewUrlParser: true })
+    .catch(e => {
+        console.error('Connection error', e.message)
+    })
 
-const ConnectDB = async () => {
-    try {
-        await client.connect();
-        console.log('Connection established');
-    } catch (e) {
-        console.error(e);
-    }
-}
+const db = mongoose.connection
 
-const ActionsDB = async (db, collection, action, query) => {
-    try {
-        const database = client.db(db);
-        let docs = database.collection(collection).find(query).toArray();
-        return docs;
-    } catch (e) {
-        console.log(e);
-    };
-};
-
-exports.ConnectDB = ConnectDB()
-exports.ActionsDB = ActionsDB();
-
-module.exports = ConnectDB;
-module.exports = ActionsDB;
+module.exports = db
 

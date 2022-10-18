@@ -2,17 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bb03c969-c4ad-427c-8667-4f6739c5bed6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/trying-to-MERP.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/db.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/api/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/UI/button/MyButton.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/UI/button/MyButton.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/pages/authorization/Authorization.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/pages/authorization/Authorization.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/routes/routes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/controllers/movie-ctrl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/controllers/user-ctrl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/models/movie-model.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/models/user-model.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/routes/user-router.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/UI/input/MyInput.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/UI/input/MyInput.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/UI/select/MySelect.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/UI/select/MySelect.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/registration/Registration.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/registration/Registration.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/registration/Registration.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/registration/Registration.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/db.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/db.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/.package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,23 +44,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;15.11.0&quot;,
-    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;15.14.9&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Dpopo/Documents/GitHub/registration/server/index.js&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "javascript.nodejs.core.library.configured.version": "18.10.0",
+    "javascript.nodejs.core.library.typings.version": "18.8.4",
+    "last_opened_file_path": "C:/Users/Dpopo/Documents/GitHub/registration/server/index.js",
+    "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2022.2.3\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Dpopo\Documents\GitHub\trying-to-MERN\client\src\pages" />
       <recent name="C:\Users\Dpopo\Documents\GitHub\registration\src\components\registration" />
     </key>
   </component>
@@ -67,6 +80,9 @@
       <workItem from="1665067685886" duration="1767000" />
       <workItem from="1665133322313" duration="7923000" />
       <workItem from="1665202573088" duration="2967000" />
+      <workItem from="1665547585464" duration="968000" />
+      <workItem from="1665548800649" duration="6632000" />
+      <workItem from="1666070386754" duration="5677000" />
     </task>
     <servers />
   </component>

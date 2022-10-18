@@ -1,9 +1,12 @@
-import Registration from "./components/registration/Registration";
+import {BrowserRouter, useRoutes} from "react-router-dom"
+import Router from "./routes/routes";
 
 function App() {
-  return (
-      <Registration/>
-  );
-}
+    return (
+        <BrowserRouter>
+          <Router/>
+        </BrowserRouter>
+    );
+  }
 
 export default App;
